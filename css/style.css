@@ -18,7 +18,7 @@ body {
 
 
 /*!-------------HEADER---------------*/
-header nav img{
+header nav img {
     width: 60px;
     height: 60px;
 }
@@ -53,11 +53,11 @@ header nav img{
 .progamacion {
     width: 100%;
     height: calc(60vh - 70px);
-    background-color:#ffc107;
+    background-color: #ffc107;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     padding: 10px;
 }
 
@@ -73,7 +73,7 @@ header nav img{
 
 .progamacion ul li {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
@@ -131,6 +131,8 @@ header nav img{
     bottom: 50px;
 }
 
+
+
 /*!----------FOOTER--------------*/
 footer {
     background-color: #ffc107;
@@ -178,8 +180,8 @@ footer div a img {
     align-items: center;
 }
 
-.carusel img{
-    width: 100vh;
+.carusel img {
+    width: 100%;
     height: 500px;
     object-fit: contain;
 }
@@ -190,10 +192,10 @@ footer div a img {
 
 }
 
-.carusel p{
+.carusel p {
     color: white;
     font-size: 20px;
-    
+
 }
 
 
@@ -232,12 +234,12 @@ footer div a img {
 
 .descripcion {
     width: 100%;
-    height: calc(60vh - 70px);
-    background-color:#ffc107;
+    height: calc(70vh - 40px);
+    background-color: #ffc107;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 
@@ -280,41 +282,80 @@ footer div a img {
 
 /*!---------- MEDIA QUERY ---------!*/
 
-/*!-----no me estan andando las MQ----!*/
+@media screen and (max-width:1050px) {
+    .progamacion h2 {
+        width: 100%;
+        font-size: 25px;
+        margin: 5px;
+    }
 
-@media screen and (max-width:900px) {
+    .progamacion ul li {
+        font-size: 15px;
+        margin: auto;
+    }
+
+
     .grid-galeria {
         width: 100%;
         margin: 0;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 220px;
+        grid-auto-rows: auto;
     }
-}
-
-@media screen and (max-width:800px){
-    .progamacion{
-        flex-direction: column;
-    }
-    .progamacion div{
-
-    }
-}
-
-
-@media screen and (max-width:740px) {
-    header {
-        flex-direction: column;
+    .grid-item-2{
+        display: none;
     }
 
     .fixed {
         display: none;
     }
-
 }
 
-@media screen and (max-width:420) {
-    header div nav ul {
-        flex-direction: column;
+@media screen and (max-width:800px) {
+    .hero {
+        width: 100%;
+        height: calc(100vh - 50px);
     }
-    
+    .hero h2 {
+        color: white;
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+
+    }
+
+
+    .progamacion h2 {
+        width: 100%;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .progamacion h2 {
+        width: 100%;
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .progamacion ul li {
+        font-size: 13px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .progamacion {
+        display: none;
+    }
+    footer iframe {
+        display: none;
+    }
 }
