@@ -303,57 +303,24 @@ footer div a img {
         width: 100%;
         margin: 0;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
+        grid-auto-rows: 220px;
     }
+}
 
-    .grid-item-2 {
-        display: none;
+@media screen and (max-width:800px){
+    .progamacion{
+        flex-direction: column;
     }
-
-    .fixed {
+    .fixed{
         display: none;
     }
 }
 
-@media screen and (max-width:800px) {
-    .hero {
-        width: 100%;
-        height: calc(100vh - 50px);
+@media screen and (max-width:740px) {
+    header {
+        flex-direction: column;
     }
-
-    .hero h2 {
-        color: white;
-        font-size: 50px;
-    }
-
-    .hero p {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        text-align: center;
-
-    }
-
-
-    .progamacion h2 {
-        width: 100%;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-        margin: auto;
-    }
-}
-
-
-@media screen and (max-width:700px) {
-    .progamacion h2 {
-        width: 100%;
-        font-size: 18px;
-        margin: 5px;
-    }
-
-    .progamacion ul li {
-        font-size: 13px;
-        margin: auto;
-    }
+    
 }
 
 
@@ -361,12 +328,18 @@ footer div a img {
     .progamacion {
         display: none;
     }
-
     footer p{
         display: none;
     }
-
     footer iframe {
         display: none;
     }
+
+}
+
+@media screen and (max-width:420) {
+    header div nav ul {
+        flex-direction: column;
+    }
+    
 }
