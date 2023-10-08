@@ -1,0 +1,112 @@
+header nav img {
+  width: 60px;
+  height: 60px; }
+
+main .hero {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .hero h2 {
+    color: white;
+    font-size: 60px; }
+  main .hero p {
+    font-size: 30px;
+    color: white;
+    text-align: center; }
+
+.programacion {
+  width: 100%;
+  height: calc(60vh - 70px);
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .programacion h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 5px; }
+  .programacion ul li {
+    list-style-type: none;
+    font-size: 17px;
+    text-align: center;
+    color: black; }
+
+.clases h2 {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 10px; }
+
+.clases .clases-contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .clases .clases-contenedor div {
+    width: 250px;
+    height: 450px;
+    border: 3px solid black;
+    text-align: center;
+    margin: 10px;
+    transition: 2s; }
+    .clases .clases-contenedor div:hover {
+      transform: scale(1.1);
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25); }
+    .clases .clases-contenedor div img {
+      width: 244px;
+      height: 350px; }
+    .clases .clases-contenedor div h3 {
+      text-align: center;
+      margin: 10px; }
+    .clases .clases-contenedor div a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      font-size: 20px; }
+
+.clases .fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
+
+footer div {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+
+footer h2 {
+  font-size: 15px; }
+
+footer img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px; }
+
+footer iframe {
+  width: 140px;
+  height: 120px;
+  margin: 2px;
+  padding: 2px; }
+
+footer a {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  padding: 1px; }
