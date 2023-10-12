@@ -1,0 +1,58 @@
+header{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+.card-turnos{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-body{
+    text-align: center;
+    .card-text{
+        font-size: 18px;
+        color: black;
+    }
+    }
+footer{
+    background-color: #ffc107;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    div{
+        h2{
+            font-size: 15px;
+        }
+    }
+    .logo{
+        width: 130px;
+        height: 130px;
+        margin: 5px;
+        padding: 5px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+    }
+    iframe{
+        width: 140px;
+        height: 120px;
+        margin: 2px;
+        padding: 2px;
+    }
+    div{
+        a{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            padding: 1px;
+        }
+    }
+    
+}

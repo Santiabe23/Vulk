@@ -1,0 +1,112 @@
+header{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+.nosotros{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-image: url("../img/box.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        text-align: center;
+        font-size: 60px;
+        color: white;
+        margin: 5px;
+    }
+
+}
+.descripcion{
+    width: 100%;
+    height: calc(70vh - 40px);
+    background-color: #ffc107;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        h2{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+    }
+    ul{
+        list-style-type: none;
+        li{
+            p{
+                font-size: 15px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                margin: 20px;
+            }
+        }
+    }
+}
+.grid-galeria{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+            box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);      
+        }
+        .img-1{
+            grid-row: span 2;
+        }
+}
+
+
+
+footer{
+    background-color: #ffc107;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    div{
+        h2{
+            font-size: 15px;
+        }
+    }
+    .logo{
+        width: 130px;
+        height: 130px;
+        margin: 5px;
+        padding: 5px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+    }
+    iframe{
+        width: 140px;
+        height: 120px;
+        margin: 2px;
+        padding: 2px;
+    }
+    div{
+        a{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            padding: 1px;
+        }
+    }
+    
+}

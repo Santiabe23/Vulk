@@ -1,0 +1,67 @@
+header{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
+.calendario{
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/horarios1.jpg);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    .lunes{
+        ol{
+            color: black;
+        }
+    }
+    div{
+        ol{
+            list-style: none;
+            color: white;
+        }
+            h2{
+                font-weight: bold;
+            }
+        }
+    }
+
+footer{
+    background-color: #ffc107;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    div{
+        h2{
+            font-size: 15px;
+        }
+    }
+    .logo{
+        width: 130px;
+        height: 130px;
+        margin: 5px;
+        padding: 5px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        padding: 5px;
+    }
+    iframe{
+        width: 140px;
+        height: 120px;
+        margin: 2px;
+        padding: 2px;
+    }
+    div{
+        a{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+            padding: 1px;
+        }
+    }
+    
+}

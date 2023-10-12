@@ -10,9 +10,7 @@
 
 body {
     font-family: 'Geologica', sans-serif;
-
 }
-
 
 
 
@@ -110,7 +108,7 @@ header nav img {
     transition: 2s;
 }
 
-.clases-contenedor div:hover{
+.clases-contenedor div:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
@@ -206,12 +204,37 @@ footer div a img {
 
 
 /*!--------------Page Horarios-------------*/
+.calendario {
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/horarios1.jpg);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
 
+.calendario ol {
+    list-style: none;
+    color: white;
+}
+
+.lunes ol {
+    color: black;
+}
+
+.calendario h2 {
+    font-weight: bold;
+}
 
 
 
 /*!--------------Page Turnos-------------*/
 
+.card-turnos {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 
 
@@ -307,11 +330,12 @@ footer div a img {
     }
 }
 
-@media screen and (max-width:800px){
-    .progamacion{
+@media screen and (max-width:800px) {
+    .progamacion {
         flex-direction: column;
     }
-    .fixed{
+
+    .fixed {
         display: none;
     }
 }
@@ -320,7 +344,7 @@ footer div a img {
     header {
         flex-direction: column;
     }
-    
+
 }
 
 
@@ -328,12 +352,13 @@ footer div a img {
     .progamacion {
         display: none;
     }
+
     footer p {
         display: none;
     }
+
     footer iframe {
         display: none;
     }
 
 }
-

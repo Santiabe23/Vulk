@@ -1,4 +1,14 @@
-header nav img {
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;600;900&display=swap");
+/*!----------------RESET--------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Geologica', sans-serif; }
+
+header img {
   width: 60px;
   height: 60px; }
 
@@ -17,12 +27,13 @@ main .hero {
   main .hero h2 {
     color: white;
     font-size: 60px; }
-  main .hero p {
-    font-size: 30px;
-    color: white;
-    text-align: center; }
 
-.programacion {
+main p {
+  font-size: 30px;
+  color: white;
+  text-align: center; }
+
+main .progamacion {
   width: 100%;
   height: calc(60vh - 70px);
   background-color: #ffc107;
@@ -31,82 +42,321 @@ main .hero {
   justify-content: center;
   align-items: center;
   padding: 10px; }
-  .programacion h2 {
+  main .progamacion h2 {
     width: 100%;
     text-align: center;
     font-size: 30px;
     color: black;
     margin: 5px; }
-  .programacion ul li {
+  main .progamacion ul {
     list-style-type: none;
-    font-size: 17px;
-    text-align: center;
-    color: black; }
+    padding: 5px; }
+    main .progamacion ul li p {
+      font-size: 17px;
+      text-align: center;
+      color: black; }
 
-.clases h2 {
+main .clases h2 {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.486);
   padding: 10px; }
 
-.clases .clases-contenedor {
+main .clases-contenedor {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
-  .clases .clases-contenedor div {
+  flex-wrap: wrap;
+  padding: 15px; }
+  main .clases-contenedor div {
     width: 250px;
     height: 450px;
     border: 3px solid black;
     text-align: center;
     margin: 10px;
     transition: 2s; }
-    .clases .clases-contenedor div:hover {
+    main .clases-contenedor div:hover {
       transform: scale(1.1);
       box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
       -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25); }
-    .clases .clases-contenedor div img {
-      width: 244px;
-      height: 350px; }
-    .clases .clases-contenedor div h3 {
-      text-align: center;
-      margin: 10px; }
-    .clases .clases-contenedor div a {
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      padding: 5px;
-      font-size: 20px; }
+  main .clases-contenedor img {
+    width: 244px;
+    height: 350px; }
 
-.clases .fixed {
+main h3 {
+  text-align: center;
+  margin: 10px; }
+
+main a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  font-size: 20px; }
+
+main .fixed {
   position: fixed;
   right: 50px;
   bottom: 50px; }
+  main .fixed img {
+    width: 50px;
+    height: 50px; }
 
-footer div {
+footer {
   background-color: #ffc107;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px; }
+  footer div h2 {
+    font-size: 15px; }
+  footer .logo {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px; }
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px; }
+  footer iframe {
+    width: 140px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  footer div a {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    padding: 1px; }
 
-footer h2 {
-  font-size: 15px; }
+header img {
+  width: 60px;
+  height: 60px; }
 
-footer img {
-  width: 100px;
-  height: 100px;
+.carusel {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .carusel img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain; }
+  .carusel h5 {
+    color: white;
+    font-size: 30px; }
+  .carusel p {
+    color: white;
+    font-size: 20px; }
+
+footer {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  footer div h2 {
+    font-size: 15px; }
+  footer .logo {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px; }
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px; }
+  footer iframe {
+    width: 140px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  footer div a {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    padding: 1px; }
+
+header img {
+  width: 60px;
+  height: 60px; }
+
+.calendario {
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/horarios1.jpg);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+  .calendario .lunes ol {
+    color: black; }
+  .calendario div ol {
+    list-style: none;
+    color: white; }
+  .calendario div h2 {
+    font-weight: bold; }
+
+footer {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  footer div h2 {
+    font-size: 15px; }
+  footer .logo {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px; }
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px; }
+  footer iframe {
+    width: 140px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  footer div a {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    padding: 1px; }
+
+header img {
+  width: 60px;
+  height: 60px; }
+
+.nosotros {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url("../img/box.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nosotros h2 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 5px; }
+
+.descripcion {
+  width: 100%;
+  height: calc(70vh - 40px);
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .descripcion h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: black; }
+  .descripcion ul {
+    list-style-type: none; }
+    .descripcion ul li p {
+      font-size: 15px;
+      text-align: center;
+      color: black;
+      margin: 20px; }
+
+.grid-galeria {
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  object-fit: cover; }
+  .grid-galeria img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25); }
+  .grid-galeria .img-1 {
+    grid-row: span 2; }
+
+footer {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  footer div h2 {
+    font-size: 15px; }
+  footer .logo {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px; }
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px; }
+  footer iframe {
+    width: 140px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  footer div a {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    padding: 1px; }
+
+header img {
+  width: 60px;
+  height: 60px; }
+
+.card-turnos {
   margin: 5px;
-  padding: 5px; }
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
-footer iframe {
-  width: 140px;
-  height: 120px;
-  margin: 2px;
-  padding: 2px; }
+.card-body {
+  text-align: center; }
+  .card-body .card-text {
+    font-size: 18px;
+    color: black; }
 
-footer a {
-  width: 50px;
-  height: 50px;
-  margin: 1px;
-  padding: 1px; }
+footer {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  footer div h2 {
+    font-size: 15px; }
+  footer .logo {
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    padding: 5px; }
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px; }
+  footer iframe {
+    width: 140px;
+    height: 120px;
+    margin: 2px;
+    padding: 2px; }
+  footer div a {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    padding: 1px; }
