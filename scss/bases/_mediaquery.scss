@@ -1,16 +1,33 @@
-@media screen and (max-width:1050px){
-    main{
-        .progamacion{
-            h2{
+@media screen and (max-width:1050px) {
+    main {
+        .progamacion {
+            h2 {
                 width: 100%;
                 font-size: 25px;
                 margin: 5px;
             }
-            ul{
-                li{
-                    p{
+
+            ul {
+                li {
+                    p {
                         font-size: 15px;
                         margin: auto;
+                    }
+                }
+            }
+        }
+
+        .descripcion {
+            height: calc(40vh - 40px);
+
+            h2 {
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    p {
+                        font-size: 12px;
                     }
                 }
             }
@@ -18,33 +35,149 @@
     }
 }
 
+@media screen and (max-width:912px) {
+    main {
+        .nosotros {
+            height: calc(50vh - 50px);
+        }
 
-@media screen and (max-width:850px){
-    main{
-    .progamacion {
-        flex-direction: column;
-    }
-    .fixed{
-        display: none;
-    }
-    }
-}
+        .grid-galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-@media screen and (max-width:740px) {
-    main{
-        .hero{
-            height: calc(70vh - 50px);
-            h2{
-                font-size: 40px;
-            }
-            p{
-                font-size: 20px;
+        .grid-item-2 {
+            display: none;
+        }
+
+        .calendario {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .jueves {
+                ol {
+                    h2 {
+                        color: black;
+                    }
+
+                    li {
+                        color: black;
+                    }
+                }
             }
         }
     }
 }
-@media screen and (max-width:600px){
-    footer{
+
+@media screen and (max-width:850px) {
+    main {
+        .progamacion {
+            flex-direction: column;
+        }
+
+        .fixed {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:740px) {
+    main {
+        .hero {
+            height: calc(70vh - 50px);
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .viernes {
+            ol {
+                h2 {
+                    color: black;
+                }
+
+                li {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    main {
+        .nosotros {
+            height: calc(60vh - 50px);
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .descripcion {
+            height: calc(50vh - 20px);
+
+            h2 {
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .grid-galeria {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .grid-item-2 {
+            display: contents;
+        }
+
+        .calendario {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            ol{
+                font-size: 15px;
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .miercoles {
+            ol {
+                h2 {
+                    color: black;
+                }
+
+                li {
+                    color: black;
+                }
+            }
+        }
+
+        .sabados ol {
+            h2 {
+                color: black;
+            }
+
+            li {
+                color: #000;
+            }
+        }
+    }
+    footer {
         p{
             display: none;
         }
@@ -52,18 +185,21 @@
             display: none;
         }
     }
+
 }
+
 @media screen and(max-width: 490px) {
-    main{
-        .progamacion{
-            h2{
+    main {
+        .progamacion {
+            h2 {
                 width: 100%;
                 font-size: 20px;
                 margin: 5px;
             }
-            ul{
-                li{
-                    p{
+
+            ul {
+                li {
+                    p {
                         font-size: 13px;
                         margin: auto;
                     }
@@ -72,18 +208,21 @@
         }
     }
 }
+
 @media screen and(max-width: 395px) {
-    main{
-        h2{
+    main {
+        h2 {
             font-size: 35px;
         }
-        p{
+
+        p {
             font-size: 15px;
         }
-        .progamacion{
-            ul{
-                li{
-                    p{
+
+        .progamacion {
+            ul {
+                li {
+                    p {
                         font-size: 10px;
                         margin: auto;
                     }
@@ -91,12 +230,9 @@
             }
         }
     }
-    footer{
+
+    footer {
         display: flex;
         flex-direction: unset;
     }
 }
-
-
-
-

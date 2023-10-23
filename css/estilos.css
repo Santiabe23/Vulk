@@ -73,7 +73,7 @@ main .clases-contenedor {
     border: 3px solid black;
     text-align: center;
     margin: 10px;
-    transition: 2s; }
+    transition: 1s; }
     main .clases-contenedor div:hover {
       transform: scale(1.1);
       box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
@@ -110,6 +110,8 @@ footer {
   padding: 20px; }
   footer div h2 {
     font-size: 15px; }
+  footer div h3 {
+    font-size: 12px; }
   footer .logo {
     width: 130px;
     height: 130px;
@@ -155,6 +157,8 @@ footer {
   padding: 20px; }
   footer div h2 {
     font-size: 15px; }
+  footer div h3 {
+    font-size: 12px; }
   footer .logo {
     width: 130px;
     height: 130px;
@@ -202,6 +206,8 @@ footer {
   padding: 20px; }
   footer div h2 {
     font-size: 15px; }
+  footer div h3 {
+    font-size: 12px; }
   footer .logo {
     width: 130px;
     height: 130px;
@@ -229,7 +235,7 @@ header img {
 
 .nosotros {
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(80vh - 70px);
   background-image: url("../img/box.jpg");
   background-size: cover;
   background-position: center;
@@ -267,7 +273,7 @@ header img {
 
 .grid-galeria {
   width: 100%;
-  margin-top: 10px;
+  padding: 13px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
@@ -275,10 +281,7 @@ header img {
   object-fit: cover; }
   .grid-galeria img {
     width: 100%;
-    height: 100%;
-    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.25); }
+    height: 100%; }
   .grid-galeria .img-1 {
     grid-row: span 2; }
 
@@ -290,6 +293,8 @@ footer {
   padding: 20px; }
   footer div h2 {
     font-size: 15px; }
+  footer div h3 {
+    font-size: 12px; }
   footer .logo {
     width: 130px;
     height: 130px;
@@ -335,6 +340,8 @@ footer {
   padding: 20px; }
   footer div h2 {
     font-size: 15px; }
+  footer div h3 {
+    font-size: 12px; }
   footer .logo {
     width: 130px;
     height: 130px;
@@ -363,7 +370,29 @@ footer {
     margin: 5px; }
   main .progamacion ul li p {
     font-size: 15px;
-    margin: auto; } }
+    margin: auto; }
+  main .descripcion {
+    height: calc(40vh - 40px); }
+    main .descripcion h2 {
+      font-size: 20px; }
+    main .descripcion ul li p {
+      font-size: 12px; } }
+
+@media screen and (max-width: 912px) {
+  main .nosotros {
+    height: calc(50vh - 50px); }
+  main .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  main .grid-item-2 {
+    display: none; }
+  main .calendario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    main .calendario .jueves ol h2 {
+      color: black; }
+    main .calendario .jueves ol li {
+      color: black; } }
 
 @media screen and (max-width: 850px) {
   main .progamacion {
@@ -377,9 +406,43 @@ footer {
     main .hero h2 {
       font-size: 40px; }
     main .hero p {
-      font-size: 20px; } }
+      font-size: 20px; }
+  main .viernes ol h2 {
+    color: black; }
+  main .viernes ol li {
+    color: black; } }
 
 @media screen and (max-width: 600px) {
+  main .nosotros {
+    height: calc(60vh - 50px); }
+    main .nosotros h2 {
+      font-size: 40px; }
+  main .descripcion {
+    height: calc(50vh - 20px); }
+    main .descripcion h2 {
+      font-size: 20px; }
+    main .descripcion ul li p {
+      font-size: 12px; }
+  main .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  main .grid-item-2 {
+    display: contents; }
+  main .calendario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    main .calendario ol {
+      font-size: 15px; }
+      main .calendario ol h2 {
+        font-size: 25px; }
+  main .miercoles ol h2 {
+    color: black; }
+  main .miercoles ol li {
+    color: black; }
+  main .sabados ol h2 {
+    color: black; }
+  main .sabados ol li {
+    color: #000; }
   footer p {
     display: none; }
   footer iframe {
