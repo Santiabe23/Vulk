@@ -198,6 +198,10 @@ header img {
   .calendario div h2 {
     font-weight: bold; }
 
+.comentanos {
+  background-color: yellow;
+  padding: 10px; }
+
 footer {
   background-color: #ffc107;
   display: flex;
